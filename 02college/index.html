@@ -10,11 +10,33 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquerybxslider.js"></script>
+	<script>
+        $(document).ready(function(){
+            var myslider1 = $(".slider").bxSlider({
+                controls:false,
+            });
+
+            $(".nextBtn").click(function(){
+                myslider1.goToNextSlide();
+            });
+            $(".prevBtn").click(function(){
+                myslider1.goToPrevSlide();
+            });
+        });
+
+        $(document).ready(function(){
+            var myslider2 = $(".slider2").bxSlider({
+                controls:false,
+                pagerCustom:".slider2Index"
+
+            });
+        });
+	</script>
 </head>
 <body>
 	<header id="header">
 		<div class="util_menu_wrap">    <!-- 100% blue -->
-			<div class="util_menu clearfix">     <!-- 1200 mauto -->
+			<div class="util_menu clearfix">     <!-- 1200 m0auto -->
 				<ul class="left clearfix">
 					<li><a href="#"class="active">대학교</a></li>
 					<li><a href="#">입학안내</a></li>
@@ -33,17 +55,17 @@
 			</div>
 		</div>
 		<div class="menuWrap clearfix">
-			<h2><a href="#"><img src="images/logo.jpg" alt="logo"></a></h2>
+			<div class="logo"><a href="#"><img src="images/logo.jpg" alt="logo"></a></div>
 			<nav>
-				<ul class="gnb clearfix">
+				<ul class="menu01 clearfix">
 					<li><a href="#">대학소개</a></li>
 					<li><a href="#">학과소개</a></li>
 					<li><a href="#">학사안내</a></li>
 					<li><a href="#">대학생활</a></li>
 					<li><a href="#">학생지원센터</a></li>
 					<li class="tapBtn">
-						<a href="#"></a>
-						<a href="#"></a>
+						<a href="#"><img src="images/btn_menu.jpg" alt=""></a>
+						<a href="#"><img src="images/m_menu.png" alt=""></a>
 					</li>
 				</ul>
 			</nav>
@@ -85,36 +107,106 @@
 			</ul>
 			
 		</section>
-		<div class="container"><!-- 1200 mato-->
+		<div class="container"><!-- 1200 m0ato-->
 			<ul class="bnr clearfix">
-				<li>
+				<li class="img01">
 					<ul class="slider1">
 						<li>
 							<img src="images/content_img01.jpg" alt="img01">
-							<div class="slider1Txt">
+							<div class="slider1Text">
 								<p><strong>한국</strong>에서<br><strong>시작</strong>하는<br>새로운<strong>꿈</strong></p>
 								<a href="#">자세히보기</a>
 							</div>
 						</li>
 						<li>
 							<img src="images/content_img01.jpg" alt="img01">
-							<div class="slider1Txt">
+							<div class="slider1Text">
 								<p><strong>한국</strong>에서<br><strong>시작</strong>하는<br>새로운<strong>꿈</strong></p>
 								<a href="#">자세히보기</a>
 							</div>
 						</li>
 					</ul>
-				</li><!--75-->
-				<li>menu2</li><!--25-->
-				<li>menu3</li><!--25-->
-				<li>menu4</li><!--25-->
-				<li>menu5</li><!--25-->
-				<li>menu6</li><!--25-->
-				<li>menu7</li><!--25-->
-				<li>menu8</li><!--75-->
+					<div class="prevBtn"><img src="images/prev.png" alt=""></div>
+				<div class="nextBtn"><img src="images/next.png" alt=""></div>
+			</li><!-- 75% --> 
+
+			<li class=img02>
+				<img src="images/content_img02.jpg" alt="img02">
+				<div class="img02Text">
+					<h3><strong>APP</strong>으로<br><strong>스마트 도서관</strong><br>바로이용하자!</h3>
+					<p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p>
+					<a href="#">자세히보기 ▶</a>
+				</div>
+			</li><!--25-->
+			<li class="img03">
+					<h3>HOT LINK</h3>
+					<ul class="icon clearfix">
+						<li><a href="#"><img src="images/icon01.png" alt=""><p>국제교류<br>센터</p></a></li>
+						<li><a href="#"><img src="images/icon02.png" alt=""><p>원격지원<br>시스템</p></a></li>
+						<li><a href="#"><img src="images/icon03.png" alt=""><p>예산 / 결산<br>공고</p></a></li>
+					</ul>
+			</li><!--25-->
+			<li class="img04">
+					<h3>공지사항</h3>
+					<ul class="img_Text">
+						<li>
+							<a href="#">[공지] 한국대학교 웹진...<span class="day">2020-12-16</span></a>
+						</li>
+						<li>
+							<a href="#">[보도] 우수대학교 선정 수상<span class="day">2020-12-14</span></a>
+						</li>
+						<li>
+							<a href="#">[공지] 대학입시 설명회<span class="day">2020-12-15</span></a>
+						</li>
+						<li>
+							<a href="#">[공지] 2020년 1학기 성적...<span class="day">2020-12-13</span></a>
+						</li>
+					</ul>
+			</li><!--25-->
+			<li class="img05 clearfix">
+				<h3>SNS NEWS</h3>
+				<div class="snsNews clearfix">
+					<img src="images/content_img04.jpg" alt="">
+					<p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p>
+				</div>
+				<div class="sns clearfix">
+						<a href="#"><img src="images/sicon_facebook.PNG" alt=""></a>
+						<a href="#"><img src="images/sicon_google.PNG" alt=""></a>
+						<a href="#"><img src="images/sicon_twitter.PNG" alt=""></a>
+						<a href="#"><img src="images/sicon_youtube.PNG" alt=""></a>
+				</div>
+			</li><!--25-->
+			<li class="img06">
+					<img src="images/content_img05.jpg" alt="">
+					<div class="img06Text"><a href="#"></a>캠퍼스투어</a></div>
+			</li><!--25-->
+			<li class="img07">
+					<img src="images/content_img06.jpg" alt="">
+					<a href="#"><img class="video" src="images/content_video_btn.png" alt=""></a>
+			</li><!--25-->
+			<li class="img08">				
 			</ul>
 		</div>
 	</div>
-	<footer>
+	<footer class="footer clearfix">
+	<div class="logo">
+		<h2><a href="#"><img src="images/logo.jpg" alt="logo"></a></div>
+	<ul class="footerTxt">
+		<ul class="footer_util clearfix">
+			<li><a href="#">회사소개</a></li>
+			<li><a href="">한국 대학교</a></li>
+			<li><a href="">개인정보취급방침</a></li>
+			<li><a href="">이용정책</a></li>
+			<li><a href="">입점/제휴문의 및 광고</a></li>
+			<li><a href="">이메일 무단수집거부</a></li>
+		</ul>
+		<p>
+			대표자 : 홍길동 &nbsp; 서울특별시 구로구 구로로 300(구로동 6가) &nbsp; 사업자등록번호 : 123-56-7890234<br>
+			통신판매업 신고번호 : 제 1234-서울 구로구-1004호 &nbsp; 개인정보관리 책임자 : 홍길동 &nbsp; 소비자피해보상보험<br>
+			고객센터 : 1234-5678 &nbsp;  FAX : 02-1234-5678 &nbsp; HANGUKUNIVERSITY @HANGUK.COM <br>
+			COPYRIGHT (C) HANGUK. ALL RIGHTS RESERVED.
+		</p>
+		
+	</footer>
 </body>
 </html>

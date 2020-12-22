@@ -12,49 +12,51 @@
 	text-align: center;background: #00163B;
 	color:#fff;font-weight:bold;
 }
+
+/*본인 사이트 유지용
+액티브 되어 있어 하얀배경 폰트 #333으로 고정
+화면표시할시 스타일시트값이 적용 (보여주기용)*/
 .util_menu .left li a.active{background: #fff;color:#333;}
 .util_menu .left li a:hover{background: #fff;color:#333;}
 
-.util_menu .right li{float: left;color:#fff;font-size:0.8em;}
+/*글자크기*/
+.util_menu .right li{float: left;color:#fff;font-size:0.8em;padding-right: 28px;}
 .util_menu .right li a{
 	display: block;line-height:40px;padding: 0 10px;
 	color:#fff;
 }
 .util_menu .right li:first-child{line-height: 40px; padding-right: 10px;}
-/*글자크기*/
+
+/*-,+*/
 .util_menu .right li.btn_mp a{
 	float: left;background: #fff;color:#333;
 	width:20px;height: 20px;line-height:20px;padding: 0;
-	text-align:center;margin-right:2px;/*margin-top: 10px;*/
+	text-align:center;margin-right:2px;margin-top: 10px;
 }
-/*-,+*/
+
 .util_menu .right li:last-child a{padding-right:0;}
 
 .menuWrap {background: #fff; position: relative; width: 1200px; margin: 0 auto;}
-.menuWrap h2 {float:left;}
-.menuWrap nav {float:right;}
-.menuWrap nav ul.gnb {position: absolute; right:150px;}
-.menuWrap nav ul.gnb li {
-	float:left; width:150px;  font-size:18px; height: 40px; line-height: 100px;
+.menuWrap .logo {float:left;}
+.menuWrap nav {float: right;}
+.menuWrap nav ul.menu01 li {
+	float:left; width:150px;  font-size:18px; height: 50px; line-height: 100px;
 	text-align: center; font-weight: bold;
 }
-.menuWrap nav ul.gnb li a {
-	display:block; width: 100%;height: 100%;
-}
-.menuWrap nav ul.gnb li:hover a {
+.menuWrap nav ul.menu01 li a {
+	display:block; width: 120px;height: 70px;}
+.menuWrap nav ul.menu01 li:hover a {
 	color:#0044AF;
 } 
 
-.menuWrap .tapBtn {padding-top: 5px; padding-right: 60px;}
-.menuWrap .tapBtn a:{
-	position: relative;
-	margin-top: 30px;
-	display: block;
+.menuWrap nav ul .menu01 .tapBtn {padding-top:5px;padding-left:60px;}
+.menuWrap nav ul .menu01 li .tapBtn a:{
+	display: block; float: left;
 	width: 45px;height: 45px;
 }
+.utilmenuWrap .menu01 li.tabBtn a:last-child{margin-right: 0;}
+.utilmenuWrap .menu01 li.tabBtn img{display: block;}
 
-.tapBtn a:first-child{background-image: url(../images/btn_menu.jpg);}
-.tapBtn a:last-child{background-image: url(../images/btn_m_menu.png);}
 
 /*contents*/
 
@@ -98,9 +100,9 @@
 	float: 	left; width: 25%; height: 225px;	
 
 }
-#contents .container>ul>li:nth-child(2n){background: 	pink;} /*짝수만*/
+#contents .container>ul>li:nth-child(2n){} /*짝수만*/
 #contents .container>ul>li:nth-child(1){width: 75%;	height: 450px; background: gray;position: relative;overflow: hidden;}
-#contents .container>ul>li:nth-child(2){/*width: 25%;*/height: 450px;}
+#contents .container>ul>li:nth-child(2){width: 25%;height: 450px;}
 #contents .container>ul>li:nth-child(3){}
 #contents .container>ul>li:nth-child(4){}
 #contents .container>ul>li:nth-child(5){}
@@ -111,22 +113,149 @@
 
 /*slider*/
 .bx-wrapper{
-	-moz-box-shadow: none;
-	-webkit-box-shadow: 
-	none;box-shadow: none;
-    border: none; 
-    margin-bottom: 0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+	border: 0 none;
+	margin-bottom: 0;
 }
 
+
 ul.bnr .slider1 li{position: relative;}
-ul.bnr .slider1 .slider1Txt{position: absolute; top: 80px; left: 100px;}
-ul.bnr .slider1 .slider1Txt p{
+ul.bnr .slider1 .slider1Text{position: absolute; top: 80px; left: 100px;}
+ul.bnr .slider1 .slider1Text p{
 	color:#0044af; font-size:60px; 
 	font-weight: 400; padding-bottom: 25px;
-	letter-spacing: -5px;
 }
-ul.bnr li .slider1 .slider1Txt a{
+ul.bnr li .slider1 .slider1Text a{
 	display:block; width: 170px; height: 40px; 
 	line-height: 40px; background: #192d4e; 
 	color: #fff; text-align: center;
 }
+
+.img01{position: relative;}
+.nextBtn,.prevBtn{
+	position: absolute;top:50%; margin-top:-50px; 
+	cursor:pointer; background: #000; opacity: 0.5;
+}
+.nextBtn{right:0px;}
+.prevBtn{left:0px;}
+
+/*APP img02*/
+.img02{
+    position: relative;
+}
+.img02 .img02Text{
+    position: absolute; color: #fff;
+    top: 80px; left: 30px;
+}
+
+.img02 h3{
+	font-size:35px;
+	font-weight: 200;
+	line-height: 40px;	
+	padding-bottom: 35px;
+}
+.img02 p{
+	font-size:16px;
+	line-height: 20px;
+	padding-bottom: 35px;
+}
+.img02 a{
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,0.7);
+	display:block;
+	width: 170px;height: 40px;line-height: 40px;
+	text-align: center;	
+	color: #fff;
+}
+
+/*content_img03*/
+.container .bnr .img03 {
+	background: #00163B;
+	padding:20px 30px;
+}
+.img03 h3{ 
+	color: #fff;
+	font-weight: 600; font-size:20px;
+	margin-bottom: 20px;
+
+}
+.img03 .icon{}
+.img03 .icon li{ float:left; margin-right:20px; }
+.img03 .icon li:last-child{ margin-right:0; }
+.img03 .icon li a{ color:#fff; text-align: center; font-size:13px; }
+.img03 .icon li a img{ margin-bottom: 5px; }
+
+/*content_img04*/
+.img04{ 
+	background-image: url(../images/content_img03.jpg);
+	padding:20px; color: #fff; 
+}
+.img04 h3{font-weight: bold; font-size:20px; }
+.img04 h3:after{
+	content: ""; display: block; width: 260px;
+	height: 2px; background:#fff; margin:18px 0;
+}
+.img04 .img_Text{ width: 100%; height: 100%; }
+.img04 .img_Text li{ margin-left: 20px;padding-bottom: 8px; list-style:square; }
+.img04 .img_Text li a{
+	display:block; width: 100%;height: 100%; 
+	color: #fff; font-size:12px; 
+	position: relative;
+}
+.img04 .img_Text li a .day{ position: absolute; right:0;  margin-right:20px; }
+
+/*.img05*/
+.img05{ background: #fff; }
+.img05 h3{
+	padding: 18px; color: #000; font-size:20px; 
+}
+.img05 .snsNews img{ float:left; margin-left: 18px; }
+.img05  p{ float:left; font-size:15px;margin-left: 10px; }
+.img05 .sns{ margin-left: 120px; margin-top: 30px; }
+
+/*.img06*/
+.container .bnr .img06{ position:relative; }
+.img06 .img06Text{
+	width: 300px; height: 50px; line-height: 50px;
+	color:#fff; text-align: center;
+	position: absolute; bottom: 0px;
+	background-color: rgba(0,0,0,0.8);
+	transition: 0.3s;
+	cursor: pointer; font-size:20px;
+}
+.img06 .img06Text:hover {
+	width: 300px; height: 225px; line-height: 225px;
+}
+.img06 .img06Text a{ display:block; }
+
+/*img07*/
+.img07 { position: relative; }
+.img07 .video { position: absolute; top: 40%; left: 125px; }
+
+
+
+
+/*footer*/
+.footer{ width: 1200px; margin: 0 auto; padding:30px 0;}
+.footer .logo img{ display: block; float: left; list-style: 100%; }
+.footer .footerTxt {
+	float: left; font-size: 12px;
+	 color: #6b6b6b;
+}
+.footer .footerTxt .footer_util li{
+	float: left; padding: 0 18px; 
+	position: relative; padding-bottom: 10px;
+}
+.footer .footer_util li:first-child{ padding-left: 0; }
+.footer .footer_util li:last-child:after{ display: none; }
+.footer .footer_util li:after{
+	content: ''; display: block; 
+	width: 1px; height: 12px; 
+	background-color: #6b6b6b; 
+	position: absolute; 
+	top: 2px; right: 0;
+}
+.footer .footer_util a{ display: block; font-size: 12px; color: #6b6b6b; }
+.footer p{ float: left; font-size: 12px; color: #6b6b6b; line-height: 20px; }
