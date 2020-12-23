@@ -12,7 +12,8 @@
 	<script src="js/jquerybxslider.js"></script>
 	<script>
         $(document).ready(function(){
-            var myslider1 = $(".slider").bxSlider({
+            var myslider1 = $(".slider1").bxSlider({
+            	pager:false
                 controls:false,
             });
 
@@ -27,7 +28,7 @@
         $(document).ready(function(){
             var myslider2 = $(".slider2").bxSlider({
                 controls:false,
-                pagerCustom:".slider2Index"
+                pagerCustom:".slider2Btn"
 
             });
         });
@@ -184,9 +185,51 @@
 					<img src="images/content_img06.jpg" alt="">
 					<a href="#"><img class="video" src="images/content_video_btn.png" alt=""></a>
 			</li><!--25-->
-			<li class="img08">				
-			</ul>
-		</div>
+			<li class="img08">
+				<ul class="slider2">
+					<li>
+						<img src="images/content_img07.jpg" alt="">
+						<div class="slider2Text">
+							<p>2017년신.편입생2차모집1</p>
+							<p>2017.7.1~7.10</p>
+							<a href="#">입학사전예약</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/content_img07.jpg" alt="">
+						<div class="slider2Text">
+							<p>2017년신.편입생2차모집2</p>
+							<p>2017.7.1~7.10</p>
+							<a href="#">입학사전예약</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/content_img07.jpg" alt="">
+						<div class="slider2Text">
+							<p>2017년신.편입생2차모집3</p>
+							<p>2017.7.1~7.10</p>
+							<a href="#">입학사전예약</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/content_img07.jpg" alt="">
+						<div class="slider2Text">
+							<p>2017년신.편입생2차모집4</p>
+							<p>2017.7.1~7.10</p>
+							<a href="#">입학사전예약</a>
+						</div>
+					</li>
+				</ul>
+
+				<div class="slider2Btn clearfix">
+					<a href="#" data-slide-index="0"></a>
+					<a href="#" data-slide-index="1"></a>
+					<a href="#" data-slide-index="2"></a>
+					<a href="#" data-slide-index="3"></a>
+				</div>
+			</li>
+            </ul>
+	    </div>
 	</div>
 	<footer class="footer clearfix">
 	<div class="logo">

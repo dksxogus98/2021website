@@ -234,7 +234,35 @@ ul.bnr li .slider1 .slider1Text a{
 .img07 { position: relative; }
 .img07 .video { position: absolute; top: 40%; left: 125px; }
 
-
+/*slider2*/
+.slider2 li{ position: absolute; }
+.slider2 .slider2Text{
+	position: absolute; color: #ff503f;
+	top: 35px; left: 40px; 
+}
+.slider2 .slider2Text p:first-child{ font-size: 32px; }
+.slider2 .slider2Text p:nth-child(2) { font-size: 52px; margin-top: -15px; margin-bottom: 20px; }
+.slider2 .slider2Text a{
+	display: block; width: 170px; 
+	height: 40px; line-height: 40px; 
+	text-align: center;
+	background-color: rgba(255,50,30,0.7); color: #fff;
+}
+.slider2 .slider2Text a:hover{
+	border: 1.5px solid rgb(255,255,255); 
+	background-color: rgba(255,50,30,0.9);
+	font-weight: bold;
+}
+/*img08*/
+.img08 { position: relative; }
+.img08 .slider2Btn{ position: absolute; top: 25px; right: 40px; }
+.img08 .slider2Btn a{
+	display: block; width: 14px; height: 14px;
+	background-color: #535353; border-radius: 7px; 
+	float: left; margin-left: 15px;
+}
+.img08 .slider2Btn a.active{ background-color: #f74237; }
+.img08 .slider2Btn a:hover{ background-color: #f62b1f; }
 
 
 /*footer*/
