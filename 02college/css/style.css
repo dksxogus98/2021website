@@ -38,24 +38,28 @@
 
 .menuWrap {background: #fff; position: relative; width: 1200px; margin: 0 auto;}
 .menuWrap .logo {float:left;}
-.menuWrap nav {float: right;}
+.menuWrap nav {
+	float: right;
+	padding:20px 0;
+}
 .menuWrap nav ul.menu01 li {
-	float:left; width:150px;  font-size:18px; height: 50px; line-height: 100px;
+	float:left; width:150px;  font-size:18px; height: 45px; line-height: 45px;
 	text-align: center; font-weight: bold;
 }
+.menuWrap .menu01 li:nth-child(5){margin-right:10px;}
 .menuWrap nav ul.menu01 li a {
-	display:block; width: 120px;height: 70px;}
+	display:block; width: 120px;height: 45px;}
 .menuWrap nav ul.menu01 li:hover a {
 	color:#0044AF;
 } 
 
-.menuWrap nav ul .menu01 .tapBtn {padding-top:5px;padding-left:60px;}
-.menuWrap nav ul .menu01 li .tapBtn a:{
+
+.menuWrap .menu01 li.tabBtn a{
 	display: block; float: left;
-	width: 45px;height: 45px;
+	width: 45px;height: 45px; margin-right: 5px;
 }
-.utilmenuWrap .menu01 li.tabBtn a:last-child{margin-right: 0;}
-.utilmenuWrap .menu01 li.tabBtn img{display: block;}
+.menuWrap .menu01 li.tabBtn a:last-child{margin-right: 0;}
+.menuWrap .menu01 li.tabBtn img{display: block;}
 
 
 /*contents*/
@@ -100,7 +104,7 @@
 	float: 	left; width: 25%; height: 225px;	
 
 }
-#contents .container>ul>li:nth-child(2n){} /*짝수만*/
+#contents .container>ul>li:nth-child(2n){} /*2n짝수에 색깔, 홀수는 2n+1*/
 #contents .container>ul>li:nth-child(1){width: 75%;	height: 450px; background: gray;position: relative;overflow: hidden;}
 #contents .container>ul>li:nth-child(2){width: 25%;height: 450px;}
 #contents .container>ul>li:nth-child(3){}
@@ -120,14 +124,13 @@
 	margin-bottom: 0;
 }
 
-
-ul.bnr .slider1 li{position: relative;}
-ul.bnr .slider1 .slider1Text{position: absolute; top: 80px; left: 100px;}
-ul.bnr .slider1 .slider1Text p{
+ul.banner .slider1 li{position: relative;}
+ul.banner .slider1 .slider1Text{position: absolute; top: 80px; left: 100px;}
+ul.banner .slider1 .slider1Text p{
 	color:#0044af; font-size:60px; 
 	font-weight: 400; padding-bottom: 25px;
 }
-ul.bnr li .slider1 .slider1Text a{
+ul.banner li .slider1 .slider1Text a{
 	display:block; width: 170px; height: 40px; 
 	line-height: 40px; background: #192d4e; 
 	color: #fff; text-align: center;
@@ -171,7 +174,7 @@ ul.bnr li .slider1 .slider1Text a{
 }
 
 /*content_img03*/
-.container .bnr .img03 {
+.container .banner .img03 {
 	background: #00163B;
 	padding:20px 30px;
 }
@@ -216,7 +219,7 @@ ul.bnr li .slider1 .slider1Text a{
 .img05 .sns{ margin-left: 120px; margin-top: 30px; }
 
 /*.img06*/
-.container .bnr .img06{ position:relative; }
+.container .banner .img06{ position:relative; }
 .img06 .img06Text{
 	width: 300px; height: 50px; line-height: 50px;
 	color:#fff; text-align: center;

@@ -9,24 +9,24 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquerybxslider.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 	<script>
         $(document).ready(function(){
-            var myslider1 = $(".slider1").bxSlider({
-            	pager:false
-                controls:false,
+            var myslider = $(".slider1").bxSlider({
+            	pager:false,
+                controls:false
             });
 
             $(".nextBtn").click(function(){
-                myslider1.goToNextSlide();
+                myslider.goToNextSlide();
             });
             $(".prevBtn").click(function(){
-                myslider1.goToPrevSlide();
+                myslider.goToPrevSlide();
             });
         });
 
         $(document).ready(function(){
-            var myslider2 = $(".slider2").bxSlider({
+            var myslider = $(".slider2").bxSlider({
                 controls:false,
                 pagerCustom:".slider2Btn"
 
@@ -64,7 +64,7 @@
 					<li><a href="#">학사안내</a></li>
 					<li><a href="#">대학생활</a></li>
 					<li><a href="#">학생지원센터</a></li>
-					<li class="tapBtn">
+					<li class="tabBtn">
 						<a href="#"><img src="images/btn_menu.jpg" alt=""></a>
 						<a href="#"><img src="images/m_menu.png" alt=""></a>
 					</li>
@@ -109,7 +109,7 @@
 			
 		</section>
 		<div class="container"><!-- 1200 m0ato-->
-			<ul class="bnr clearfix">
+			<ul class="banner clearfix">
 				<li class="img01">
 					<ul class="slider1">
 						<li>
@@ -128,7 +128,7 @@
 						</li>
 					</ul>
 					<div class="prevBtn"><img src="images/prev.png" alt=""></div>
-				<div class="nextBtn"><img src="images/next.png" alt=""></div>
+				    <div class="nextBtn"><img src="images/next.png" alt=""></div>
 			</li><!-- 75% --> 
 
 			<li class=img02>
