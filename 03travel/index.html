@@ -9,59 +9,52 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	 <script src="js/jquery.bxslider.js"></script> 
+	<script src="js/jquery.bxslider.js"></script> 
 </head>
 <body>
-	<header id="header">
-		<div class="main"> <!-- 100% -->
-			<div class="headerWarp clearfix"> <!-- 980px -->				
-				<a href="#"><img src="images/logo.png" alt=""></a>
-				
-				<fieldset>
-				    <form action="#" method="post"></form>
-					<label for="search"><strong>SEARCH</strong></label>
-					<input type="text" placeholder="검색어를 입력하세요." id="search" 
-					class="searchInp" required>
-					<input type="submit" class="searchBtn"></input>
-				</fieldset>
+	<header id="header"> 
+        <nav class="headerWrap ">
+            <div class="main">
+                <div class="logo"><a href="#">logo</a></div>
+                <div class="searchwrap">
+                    <form action="#" method="post">
+                        <label for="search" class="searchTit">search</label>
+                        <input type="text" id="search"
+                        placeholder="검색어를 입력하세요" class="searchInp">
+                        <input type="submit" value="button" class="searchBtn">
+                    </form>     
+                </div>
+                
+                <div class="sns">  
+                    <ul class="clearfix">
+                        <li><strong>+82</strong> 02 1234 5678</li>
+                        <a href="#"><img src="images/sns_icon01.jpg" alt=""></a>
+					    <a href="#"><img src="images/sns_icon02.jpg" alt=""></a>
+					    <a href="#"><img src="images/sns_icon03.jpg" alt=""></a>
+					    <a href="#"><img src="images/sns_icon04.jpg" alt=""></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-				<p class="ph"><strong>+82</strong> 02 1234 5678</p>
-				<ul class="sns clearfix">
-					<a href="#"><img src="images/sns_icon04.jpg" alt=""></a>
-					<a href="#"><img src="images/sns_icon03.jpg" alt=""></a>
-					<a href="#"><img src="images/sns_icon02.jpg" alt=""></a>
-					<a href="#"><img src="images/sns_icon01.jpg" alt=""></a>
-				</ul>
-			</div>
+        <nav class="gnbWrap">
+            <div class="gnb">
+                <ul class="clearfix">
+                    <li><a href="#">여행도시</a></li>
+                    <li><a href="#">호텔예약</a></li>
+                    <li><a href="#">렌트카</a></li>
+                    <li><a href="#">여행TIP</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+    	<div>
+			<img class="blo2" src="images/balloon2.png" alt="">
+			<img class="blo3" src="images/balloon3.png" alt="">
 		</div>
-		<div class="gnb">
-			<ul class="gnbWrap clearfix">
-				<li><a href="#">여행도시</a></li>
-				<li><a href="#">호텔예약</a></li>
-				<li><a href="#">렌트카</a></li>
-				<li><a href="#">여행TIP</a></li>
-				<li><a href="#">회사소개</a></li>
-				<li><a href="#">커뮤니티</a></li>
-			</ul>
-		</div>
-		</div>
-	</header>
-
-	<contents id="contents">
-		<div class="container"><!-- 980px -->
-		
-
-<div id="footer">
-		<div class="foot">
-			<ul>
-				<li><a href="#">이용약관</a></li>
-				<li><a href="#"><strong>개인정보취급방침</strong></a></li>
-				<li><a href="#">사이트맵</a></li>
-				<li><a href="#">고객센터</a></li>
-				<li><a href="#">광고 및 제휴문의</a></li>
-			</ul>
-			<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호:123-45-678910 대표이사:홍길동 대표번호:02-1234-5678<br>COPYRIGHTⓒ2014 HIMEDIA TOUR. ALL RIGHTS RESERVED.</p>
-		</div>
-	</div>
+ 
 </body>
 </html>

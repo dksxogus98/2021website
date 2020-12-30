@@ -1,67 +1,155 @@
 @charset "utf-8";
 
+body{
+    background-image: url(../images/bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 
 /*header*/
-#header .main{
-	position: relative;
-	background: #0763a2;
-	height: 88px;
+#header{
+    margin-bottom: 56px;}
+.headerWrap{
+    width:100%;
+    height: 90px;
     background-image: url(../images/airplane.jpg);
-    background-position: top center;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0d72a8;
+}
+.headerWrap .main{
+    width: 980px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerWrap .main .logo{
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+}
+.headerWrap .main .logo a{
     display: block;
-}
-#header .headerWarp{
-	width: 980px; 
-	margin: 0 auto; 
-	position: relative;
-}
-#header .headerWarp img{
-	margin-top: 20px;
-	width: 200px;height: 45px;
-	cursor: pointer; 
-	float: left;
-	display: block;
-	text-align: center;
+    width: 145px;
+    height: 45px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
 }
 
-#header .headerWarp .search{
-	border: 0 none; margin-left: 10px;
+
+.headerWrap .main .searchwrap{
+    width: 290px;
+    height: 30px;
+    position: absolute;
+    left: 280px;
+    top: 50%;
+    transform: translateY(-50%)
 }
-#header .headerWarp fieldset{
-	width: 300px; height: 30px; 
-	background: #fff; 
-	border-radius: 140px 140px; 
+.searchwrap form{
+    position: relative;
+}
+.searchTit{
+    display: block;
+    width: 60px;
+    height: 20px;
+    background-image: url(../images/searchtxt.jpg);
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    z-index: 1;
+}
+.searchInp{
+    width: 290px;
+    height: 30px;
+    border: 3px solid #eee;
+    border-radius: 25px;
+    text-indent: 85px;
+    position: relative;
+}
+.searchBtn{
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/search.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform:translateY(-50%);
+    border: 0 none;
+}
+.headerWrap  .main .sns{
+    width: 342px;
+    height: 24px;
+    position:absolute;
+    right: 0px;
+    top: 32px;;
+}
+.sns li:first-child{
+    width: 200px;
+    margin-right: 31px;
+}
+.sns li:last-child{margin-right: 0;}
+.sns li{
+    float: left;
+    color: #fff;
+    font-size:25px; 
+    font-weight: 500;
+    word-spacing: -5px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    top:20px; right: 150px;
+}
+.headerWrap .sns{
 	position: absolute; 
-	top: 20px;left: 280px; 
-	border: 0 none; 
-	line-height: 30px;
-}
-#header .headerWarp fieldset label{
-	margin-left: 15px; font-size: 0.8em;
-}
-#header .headerWarp .searchBtn{
-	background-image: url(../images/search.jpg);
-	text-indent: -9999px;
-    width: 20px;height: 20px; 
-    background-position: 50% 50%; 
-    border: 0 none; margin-left: 10px;
+	right: 0; top: 20px;
+	cursor: pointer; 
+	float: left; 
+	padding-top: 3.5px; 
 }
 
-#header .headerWarp .ph{
-	position: absolute;
-	top: 0px; left: 650px; 
-	color: #fff;
-	font-size: 1.5em; 
-}
 
-#header .sns img{
-	float: right;
-	width: 25px;height: 25px;
-	margin-left: 5px;
-	padding-top: 8px;
-	text-align: center;
-	cursor: pointer;
-}
 
+
+/*header gnb*/
+#header{
+}
+#header .gnbWrap{
+    height: 64px;
+    background-image: url(../images/gnb_bg.jpg);
+}
+.gnbWrap .gnb{
+    width: 980px;
+    margin: 0 auto;
+}
+#header .gnb ul{
+    position: relative;
+}
+#header .gnb li{
+    width: 163px;
+    height: 60px;                            
+    float: left;
+    border-right: 1px solid #d8d8d8;
+}
+#header .gnb li:first-child{
+    border-left: 1px solid #d8d8d8;
+}
+#header .gnb li a{
+    display: block;
+    line-height: 62px;
+    text-align: center;
+    font-weight: bold;
+}
+.gnb li a:hover{
+    background: #0e73a7;
+    color: #fff;
+}
 
