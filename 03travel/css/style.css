@@ -2,7 +2,7 @@
 
 
 /*header*/
-.headerMain{
+#header .main{
 	position: relative;
 	background: #0763a2;
 	height: 88px;
@@ -11,30 +11,57 @@
     background-repeat: no-repeat;
     display: block;
 }
-
-.headerWrap{ width: 980px; margin: 0 auto; position: relative; }
-.headerWrap img{ 
-	cursor: pointer; float: left; 
-	padding-top: 3.5px; 
+#header .headerWarp{
+	width: 980px; 
+	margin: 0 auto; 
+	position: relative;
 }
-.headerWrap .sns li{ float: left; cursor: pointer; width: 25px; margin-left: 5px; }
-
-.headerWrap fieldset{ 
-	width: 300px; height: 30px; line-height: 30px;
-	position: absolute; border: 0 none; 
-	background: #fff; border-radius:145px 145px;
+#header .headerWarp img{
+	margin-top: 20px;
+	width: 200px;height: 45px;
+	cursor: pointer; 
+	float: left;
+	display: block;
+	text-align: center;
 }
-.headerWrap fieldset label{ margin-left: 10px; font-size:12px; }
-.headerWrap fieldset .search{ border: 0 none; }
-.headerWrap fieldset .search{ border: 0 none; }
-.headerWrap fieldset .ph{ position: absolute; color: #fff;  }
 
-.headerWrap .sns{position: absolute; right: 0;}
+#header .headerWarp .search{
+	border: 0 none; margin-left: 10px;
+}
+#header .headerWarp fieldset{
+	width: 300px; height: 30px; 
+	background: #fff; 
+	border-radius: 140px 140px; 
+	position: absolute; 
+	top: 20px;left: 280px; 
+	border: 0 none; 
+	line-height: 30px;
+}
+#header .headerWarp fieldset label{
+	margin-left: 15px; font-size: 0.8em;
+}
+#header .headerWarp .searchBtn{
+	background-image: url(../images/search.jpg);
+	text-indent: -9999px;
+    width: 20px;height: 20px; 
+    background-position: 50% 50%; 
+    border: 0 none; margin-left: 10px;
+}
 
-.
-/*.headerWrap{ width: 1920px; margin: 0 auto;position: relative; }*/
-/*.headerMenu{ width: 1600px; position: absolute; top: 80px; left: 30px;
-}}
-.headerMenu img{  }*/
+#header .headerWarp .ph{
+	position: absolute;
+	top: 0px; left: 650px; 
+	color: #fff;
+	font-size: 1.5em; 
+}
 
-/*.headerMenu{ width: 1600px;height: 99px; float: left; position: absolute; }*/
+#header .sns img{
+	float: right;
+	width: 25px;height: 25px;
+	margin-left: 5px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
