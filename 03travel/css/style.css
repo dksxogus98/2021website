@@ -27,6 +27,8 @@ body{
 .ml14{margin-left: 14px;}
 .ml15{margin-left: 15px;}
 .ml16{margin-left: 16px;}
+.ml17{margin-left: 17px;}
+.ml18{margin-left: 18px;}
 .ml20{margin-left: 20px;}
 .ml30{margin-left: 30px;}
 .ml40{margin-left: 40px;}
@@ -233,11 +235,11 @@ body{
 	top: 92px; left: 190px;
 }
 
-
 .contents01 li{
 	float: left; 
 	position: relative; 
-	width: 234px; height: 216px;\
+	width: 234px; height: 216px;
+	left: 461px;
 }
 .contents01 li a{
 	background: #152630; 
@@ -246,7 +248,8 @@ body{
 	position: absolute; 
 	bottom: 0;  color: #fff; 
 	text-align: center;
-    line-height: 50px; display: none; 
+    line-height: 50px;
+    display: none; 
 }
 .contents01 li a span{color: green;}
 .contents01 li:hover a{display: block;}
@@ -297,7 +300,7 @@ body{
 
 .contentstxt{
 	position: absolute; 
-	top: 230px; right: 340px;
+	top: 230px; right: 560px;
 }
 .contentstxt h1{
 	color: #152532; 
@@ -386,11 +389,17 @@ body{
 
 
 /*footer*/
-#footer .foot{width: 980px; margin: 0 auto;}
+#footer .foot{
+	width: 980px; 
+	margin: 0 auto;
+	background-color: #fff;
+	margin-top: 20px;
+}
 #footer .foot li{float: left; margin-left: 30px;}
 #footer .foot li:first-child{margin-left: 0;}
 #footer .foot a{display: block;}
 #footer .foot p{color: #717171; font-size: 0.8em;}
+
 
 
 
